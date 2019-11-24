@@ -113,9 +113,7 @@ if __name__ == "__main__":
             callbacks=[checkpoint_period1, reduce_lr])
 
     model.save_weights(log_dir+'middle_one.h5')
-
-
-    for i in len(model.layers):
+    for i in range(len(model.layers)):
         model.layers[i].trainable = True
     # 交叉熵
     model.compile(loss = 'categorical_crossentropy',
@@ -126,8 +124,8 @@ if __name__ == "__main__":
             steps_per_epoch=max(1, num_train//batch_size),
             validation_data=generate_arrays_from_file(lines[num_train:], batch_size),
             validation_steps=max(1, num_val//batch_size),
-            epochs=10,
-            initial_epoch=5,
+            epochs=6,
+            initial_epoch=3,
             callbacks=[checkpoint_period1, reduce_lr])
 
-    model.save_weights(log_dir+'middle_one.h5')
+    model.save_weights(log_dir+'last_one.h5')
