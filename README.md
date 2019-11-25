@@ -7,8 +7,8 @@
 该仓库还会存储这些特征提取网络的应用，如猫狗分类、语义分割、目标检测等。  
 
 ## 数据集下载：
-猫狗数据集：链接: [https://pan.baidu.com/s/1TqmdkJBY49ftg19tRK2Ngg](https://pan.baidu.com/s/1TqmdkJBY49ftg19tRK2Ngg) 提取码: htxf
-
+猫狗数据集：链接: [https://pan.baidu.com/s/1TqmdkJBY49ftg19tRK2Ngg](https://pan.baidu.com/s/1TqmdkJBY49ftg19tRK2Ngg) 提取码: htxf  
+斑马线数据集：连接：链接：https://pan.baidu.com/s/1uzwqLaCXcWe06xEXk1ROWw  提取码：pp6w   
 ## 完成内容:
 - [x] VGG16训练分类网络-利用dense全连接完成分类（猫狗大战）
 - [x] MobileNet训练分类网络-利用GlobalAveragePooling全局池化完成分类（猫狗大战）
