@@ -25,7 +25,6 @@ def resize_image(image, size):
 
 def print_answer(argmax):
     with open("./data/model/index_word.txt","r",encoding='utf-8') as f:
-        synset = [l.split(";")[1][:-1] for l in f.readlines()]
-        
+        synset = [l.split(";")[1].replace("\n","") for l in f.readlines()]
     print(synset[argmax])
     return synset[argmax]
