@@ -18,6 +18,6 @@ keras==2.1.5
 
 这三个例子均使用了迁移学习的思想，主干部分提取出来的特征是通用的，所以我们可以不训练主干部分先，因此训练部分分为两步，分别是冻结训练和解冻训练，冻结训练是不训练主干的，解冻训练是训练主干的。 由于训练的特征层变多，解冻后所需显存变大。
 
-## 文件下载：
+## 文件下载
 猫狗数据集：链接: [https://pan.baidu.com/s/1TqmdkJBY49ftg19tRK2Ngg](https://pan.baidu.com/s/1TqmdkJBY49ftg19tRK2Ngg) 提取码: htxf  
 斑马线数据集：连接：链接：https://pan.baidu.com/s/1uzwqLaCXcWe06xEXk1ROWw  提取码：pp6w   
