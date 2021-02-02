@@ -1,8 +1,8 @@
 import tensorflow as tf
+from keras import Model, Sequential
+from keras.layers import (Conv2D, Dense, Flatten, GlobalAveragePooling2D,
+                          GlobalMaxPooling2D, Input, MaxPooling2D)
 from tensorflow import keras
-from keras import Model,Sequential
-from keras.layers import Flatten, Dense, Conv2D, GlobalAveragePooling2D
-from keras.layers import Input, MaxPooling2D, GlobalMaxPooling2D
 
 
 def VGG16(num_classes):
@@ -52,6 +52,6 @@ def VGG16(num_classes):
     x = Dense(256,activation = 'relu',name = 'fullc2')(x)
     # 2
     x = Dense(num_classes,activation = 'softmax',name = 'fullc3')(x)
-    model = Model(image_input,x,name = 'vgg16')
 
+    model = Model(image_input,x,name = 'vgg16')
     return model
