@@ -109,7 +109,7 @@ if __name__ == "__main__":
                 steps_per_epoch=max(1, num_train//batch_size),
                 validation_data=generate_arrays_from_file(lines[num_train:], batch_size),
                 validation_steps=max(1, num_val//batch_size),
-                epochs=50
+                epochs=50,
                 initial_epoch=0,
                 callbacks=[checkpoint, reduce_lr, early_stopping])
         
